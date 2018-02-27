@@ -1,0 +1,21 @@
+public class DataOnly {		
+
+
+public static void main(String[] args) {
+	class dOnly {
+	int A;
+	double B;
+	boolean C;
+	
+
+void Func() {
+	System.out.println(A);
+	System.out.println(B);
+	System.out.println(C);	}}
+
+
+	dOnly D = new dOnly();
+	D.A = 513;
+	D.B = 1.1123;
+	D.C = false;		
+	D.Func(); }}

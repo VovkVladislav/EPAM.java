@@ -1,0 +1,11 @@
+
+import java.util.*; 
+
+public class Test {
+	public static void main(String[] args) {
+		
+		Random r = new Random();
+		int num = r.nextInt();
+		if(num % 2 == 0) { System.out.println("heads"); } else { System.out.println("tails"); }		
+	}
+}

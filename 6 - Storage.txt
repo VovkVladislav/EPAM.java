@@ -1,0 +1,14 @@
+public class Storage {	
+public static void main(String[] args) {
+
+
+class St{
+	int Storage(String Symbols) {
+	return Symbols.length();}}
+
+
+	
+	Scanner x = new Scanner(System.in);
+	String Symbols = x.nextString();
+	St a=new St();
+	System.out.println(a.storage(Symbols));}}

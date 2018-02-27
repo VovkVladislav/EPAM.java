@@ -1,0 +1,7 @@
+public class Fibonacci {
+public static void main(String[] args) {
+	for(int x = 1; x < 1000; x++ ) {
+	int factors = 0;
+	for(int y = 1; y < (i + 2)/2; y++ ) {
+		if((x % y) == 0) factors++;}
+		if(factors < 2) System.out.println(x + "_");}}}
