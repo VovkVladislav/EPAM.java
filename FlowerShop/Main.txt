@@ -1,0 +1,118 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+//______________________________________________________________________________________________________________________
+        Flowers flower0 = new Flowers("Rose", "White", 20, 1);
+        Flowers flower1 = new Flowers("Rose", "White", 20, 1);
+        Flowers flower2 = new Flowers("Rose", "White", 20, 2);
+        Flowers flower3 = new Flowers("Rose", "Red", 20, 4);
+        Flowers flower4 = new Flowers("Rose", "Red", 20, 2);
+        Flowers flower5 = new Flowers("Rose", "Pink", 20, 3);
+        Flowers flower6 = new Flowers("Rose", "Pink", 20, 1);
+        Flowers flower7 = new Flowers("Rose", "Pink", 20, 1);
+        Flowers flower8 = new Flowers("Rose", "Pink", 20, 4);
+        Flowers flower9 = new Flowers("Rose", "Pink", 20, 1);
+
+
+        Flowers flower00 = new Flowers("Tulip", "White", 20, 1);
+        Flowers flower01 = new Flowers("Tulip", "White", 20, 1);
+        Flowers flower02 = new Flowers("Tulip", "White", 20, 2);
+        Flowers flower03 = new Flowers("Tulip", "Red", 20, 4);
+        Flowers flower04 = new Flowers("Tulip", "Red", 20, 2);
+        Flowers flower05 = new Flowers("Tulip", "Red", 20, 3);
+        Flowers flower06 = new Flowers("Tulip", "Pink", 20, 1);
+        Flowers flower07 = new Flowers("Tulip", "Pink", 20, 1);
+        Flowers flower08 = new Flowers("Tulip", "Pink", 20, 4);
+        Flowers flower09 = new Flowers("Tulip", "Pink", 20, 1);
+
+        Flowers flower000 = new Flowers("Narcissus", "White", 20, 1);
+        Flowers flower001 = new Flowers("Narcissus", "White", 20, 1);
+        Flowers flower002 = new Flowers("Narcissus", "White", 20, 2);
+        Flowers flower003 = new Flowers("Narcissus", "Red", 20, 4);
+        Flowers flower004 = new Flowers("Narcissus", "Red", 20, 2);
+        Flowers flower005 = new Flowers("Narcissus", "Red", 20, 3);
+        Flowers flower006 = new Flowers("Narcissus", "Pink", 20, 1);
+        Flowers flower007 = new Flowers("Narcissus", "Pink", 20, 1);
+        Flowers flower008 = new Flowers("Narcissus", "Pink", 20, 4);
+        Flowers flower009 = new Flowers("Narcissus", "Pink", 20, 1);
+
+//______________________________________________________________________________________________________________________
+
+        Bouquet MyBouquet = new Bouquet();
+
+        MyBouquet.addFlower(flower0);
+        MyBouquet.addFlower(flower1);
+        MyBouquet.addFlower(flower2);
+        MyBouquet.addFlower(flower3);
+        MyBouquet.addFlower(flower4);
+        MyBouquet.addFlower(flower5);
+        MyBouquet.addFlower(flower6);
+        MyBouquet.addFlower(flower7);
+        MyBouquet.addFlower(flower8);
+        MyBouquet.addFlower(flower9);
+
+        MyBouquet.addFlower(flower00);
+        MyBouquet.addFlower(flower01);
+        MyBouquet.addFlower(flower02);
+        MyBouquet.addFlower(flower03);
+        MyBouquet.addFlower(flower04);
+        MyBouquet.addFlower(flower05);
+        MyBouquet.addFlower(flower06);
+        MyBouquet.addFlower(flower07);
+        MyBouquet.addFlower(flower08);
+        MyBouquet.addFlower(flower09);
+
+        MyBouquet.addFlower(flower000);
+        MyBouquet.addFlower(flower001);
+        MyBouquet.addFlower(flower002);
+        MyBouquet.addFlower(flower003);
+        MyBouquet.addFlower(flower004);
+        MyBouquet.addFlower(flower005);
+        MyBouquet.addFlower(flower006);
+        MyBouquet.addFlower(flower007);
+        MyBouquet.addFlower(flower008);
+        MyBouquet.addFlower(flower009);
+
+
+//______________________________________________________________________________________________________________________
+
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the name of the desired flower(Rose/Tulip/Narcissus) ");
+        String flowerName = sc.next();
+
+        System.out.println("Enter the color of the desired flower(Red/Pink/White) ");
+        String flowerColor = sc.next();
+
+
+
+
+
+        MyBouquet.SortBouquet(flowerName, flowerColor);
+        System.out.println("Suitable flowers for your request: ");
+        System.out.println("____________________________________");
+        MyBouquet.ShowBouquet();
+        System.out.println("____________________________________");
+        System.out.println("Your bouquet price: " + MyBouquet.Price() + "grn");
+        System.out.println("");
+        System.out.println("To check freshness - press [1] ");
+        System.out.println("To end - press [2] ");
+        int fr = sc.nextInt();
+        if(fr == 1) {
+            System.out.println("____________________________________");
+            MyBouquet.Freshness();
+        }
+
+
+
+
+
+
+    }
+}

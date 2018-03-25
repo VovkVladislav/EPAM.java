@@ -1,0 +1,44 @@
+package com.company;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Bouquet {
+    List<Flowers> allFlowers = new ArrayList<>();
+    List<Flowers> bouquetFlowers = new ArrayList<>();
+
+
+    public void addFlower(Flowers flowers){ allFlowers.add(flowers); }
+
+
+
+    public void SortBouquet(String flowerName, String flowerColor) {
+        for (int i = 0; i < allFlowers.size(); i++) {
+            if (allFlowers.get(i).getName().compareTo(flowerName) == 0) {
+                if (allFlowers.get(i).getColor().compareTo(flowerColor) == 0) {
+                    bouquetFlowers.add(allFlowers.get(i));
+                } } }
+        }
+
+
+        public void ShowBouquet(){
+        for(int i = 0; i!=bouquetFlowers.size(); i++){
+            System.out.println(bouquetFlowers.get(i).getColor() + " " + bouquetFlowers.get(i).getName() + " " + "with price " + bouquetFlowers.get(i).getPrice() + "grn");
+            //System.out.println(bouquetFlowers.get(i).getName() + " " + bouquetFlowers.get(i).getColor() + " " + bouquetFlowers.get(i).getPrice());
+        } }
+
+
+    public int Price(){
+        int priceOfBouquet = 0;
+        for (int i = 0; i< bouquetFlowers.size(); i++) {
+            priceOfBouquet += bouquetFlowers.get(i).getPrice(); }
+        return priceOfBouquet; }
+
+    public void Freshness(){
+        for(int i = 0; i!=bouquetFlowers.size(); i++){
+            System.out.println("Freshness of " + (i+1) + " flower is: " + bouquetFlowers.get(i).getFreshness() + " days");
+        }
+
+    }
+
+}
+
